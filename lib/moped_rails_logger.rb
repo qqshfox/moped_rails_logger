@@ -13,7 +13,7 @@ module Moped
   class Node
     def logging(operations)
       raw_payload = {
-        operations: operations,
+        operations: operations.map(&:log_inspect),
         resolved_address: resolved_address,
       }
 

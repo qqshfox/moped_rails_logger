@@ -42,13 +42,13 @@ module MopedRailsLogger
       runtime = (" (%.4fms)" % duration_ms)
 
       if ops.length == 1
-        debug prefix + ops.first.log_inspect + runtime
+        debug prefix + ops.first + runtime
       else
         first, *middle, last = ops
 
-        debug prefix + first.log_inspect
-        middle.each { |m| debug indent + m.log_inspect }
-        debug indent + last.log_inspect + runtime
+        debug prefix + first
+        middle.each { |m| debug indent + m }
+        debug indent + last + runtime
       end
     end
   end
