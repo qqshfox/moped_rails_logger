@@ -2,6 +2,15 @@
 
 Rails-like logger for moped.
 
+## Preview
+
+```
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=alo7_star_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2210ms)
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.7ms | Redis: 0.0ms | Moped: 0.2ms)
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
