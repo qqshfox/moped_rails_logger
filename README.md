@@ -25,6 +25,10 @@ Or install it yourself as:
 
     $ gem install moped_rails_logger
 
+## More
+
+Support [my fork of RailsPanel](https://github.com/qqshfox/rails_panel/tree/moped_support).
+
 ## Contributing
 
 1. Fork it
